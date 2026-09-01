@@ -7,7 +7,9 @@
 #include "charybdis.dtsi"
 
 &kscan0 {
-    diode-direction = "col2row";
+    compatible = "zmk,kscan-gpio-matrix";
+            diode-direction = "col2row";
+            wakeup-source;
     col-gpios
         = <&pro_micro 8 GPIO_ACTIVE_HIGH >
         , <&pro_micro 7 GPIO_ACTIVE_HIGH >
@@ -16,4 +18,8 @@
         , <&pro_micro 20 GPIO_ACTIVE_HIGH >
         , <&pro_micro 19 GPIO_ACTIVE_HIGH >
     ;
+};
+
+&physical_layout_charybdis {
+    kscan = <&kscan0>;
 };
