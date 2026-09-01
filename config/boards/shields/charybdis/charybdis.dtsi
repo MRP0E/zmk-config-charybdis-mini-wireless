@@ -4,14 +4,14 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,matrix_transform = &matrix_transform0 ;
     }; 
 
     vbatt: vbatt {
 	    compatible = "zmk,battery-nrf-vddh";
     };
           
-    default_transform: matrix_transform_0 {
+    matrix_transform0 : matrix_transform0  {
         compatible = "zmk,matrix-transform";
         columns = <6>;
         rows = <8>;
