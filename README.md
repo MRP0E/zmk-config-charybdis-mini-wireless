@@ -45,7 +45,7 @@ You have two options on how to configure your desired keymap:
 ### How to flash the keyboard?
 
 1. Obtain `firmware.zip`
-2. Unzip `firmware.zip` - you should have `charybdis_left-nice_nano_v2-zmk.uf2` and `charybdis_right-nice_nano_v2-zmk.uf2` files
+2. Unzip `firmware.zip` - you should have `charybdis_left-nice_nano@2//zmk-zmk.uf2` and `charybdis_right-nice_nano@2//zmk-zmk.uf2` files
 3. Turn off the power for selected halve (move slider to position `OFF`)
 4. Connect selected halve to the PC via USB-C cable
 5. Press `RESET` button **twice** to enter DFU mode - you should see new USB device in your file manager
