@@ -11,7 +11,7 @@
 	    compatible = "zmk,battery-nrf-vddh";
     };
           
-    matrix_transform0 : matrix_transform0  {
+    matrix_transform0: matrix_transform0  {
         compatible = "zmk,matrix-transform";
         columns = <6>;
         rows = <8>;
