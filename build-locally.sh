@@ -9,7 +9,7 @@ set -euxo pipefail
 build_and_copy () {
     local side=$1
     west build \
-        -b nice_nano@2//zmk -- \
+        -b nice_nano_v2 -- \
         -DSHIELD=charybdis_$side \
         -DZMK_CONFIG="/home/erenatas/GitRepos/zmk-config-charybdis-mini-wireless/config"
 
