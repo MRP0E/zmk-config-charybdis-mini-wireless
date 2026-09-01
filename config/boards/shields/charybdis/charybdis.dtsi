@@ -23,9 +23,7 @@
 		>;
     };
 
-&physical_layout_charybdis {
-    transform = <&matrix_transform0>;
-};
+
 	
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
@@ -40,4 +38,8 @@
             , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
     };
+};
+
+&physical_layout_charybdis {
+    transform = <&matrix_transform0>;
 };
